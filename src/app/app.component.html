@@ -4,6 +4,8 @@
     <p>What's your name?</p>
     <input [(ngModel)]="myName"/>
     <p>Why, hello there {{myName}}{{myName !== '' ? '!' : ''}}</p>
+    <input #view>
+    <button (click)="showView()">Show view child</button>
   </div>
 
   <div>
@@ -26,10 +28,16 @@
 </div>
 
 <div>
+  <h1>Badness</h1>
+
+  <p>Text from method: {{method()}}</p>
+</div>
+
+<div>
   <h1>Pipes</h1>
 
-  <p>{{'this is all lowercase in the HTML' | uppercase}}</p>
-  <p>{{100 | currency:"ZAR":"symbol-narrow":"1.2"}}</p>
+  <p>{{'this is all lowercase in the html' | uppercase}}</p>
+  <p>{{100 | currency:"ZAR":"symbol":"1.2"}}</p>
   <p>{{customPipeText | kebabCase}}</p>
-  <p>{{true | booleanYesNo:true}}</p>
+  <p>{{true | booleanYesNo}}</p>
 </div>
