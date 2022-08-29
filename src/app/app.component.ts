@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'web-forum-angular-two';
+  myName: string = '';
+  toDoList: string[] = ['Learn Two Way Data Binding', 'Learn Directives', 'Learn Pipes'];
+
+  totalItems: number = this.toDoList.length;
+  customPipeText: string = 'customPipeTest';
 }

@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of toDoItems; let i = index">
+    {{item}}
+    <button (click)="complete(i)">Complete</button>
+  </li>
+</ul>
