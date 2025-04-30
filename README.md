@@ -1,3 +1,6 @@
+# Migrated
+Moved to: https://codeberg.org/newteq_github_archives/entelect-web-forum-angular-two
+
 # WebForumAngularTwo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
